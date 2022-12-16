@@ -5,9 +5,8 @@
         self.__sec = sec
 
     def __str__(self):
-        hour = f"{self.__hours:02}:{self.__min:02}:{self.__sec:02}"
-        return hour.zfill(2)
-
+        return f"{self.__hours:02}:{self.__min:02}:{self.__sec:02}"
+        
     def next_second(self):
         self.__sec += 1
         if self.__sec > 59:
